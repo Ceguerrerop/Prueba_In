@@ -7,17 +7,17 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomePageModule } from './home/home.module'; // Asegúrate de importar el módulo de HomePage
+import { HomePageModule } from './home/home.module'; 
 
 @NgModule({
-  declarations: [AppComponent], // Elimina HomePage de aquí
+  declarations: [AppComponent], 
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    HomePageModule // Asegúrate de que este módulo esté importado
+    HomePageModule 
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
